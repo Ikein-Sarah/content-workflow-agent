@@ -42,19 +42,38 @@ class SchedulingResult:
 
 def authenticate_google_calendar():
     """Authenticate and return Google Calendar service"""
-    SERVICE_ACCOUNT_FILE = os.getenv("GOOGLE_SERVICE_ACCOUNT_FILE", "social-media-agent.json")
     SCOPES = ["https://www.googleapis.com/auth/calendar"]
 
     try:
-        creds = service_account.Credentials.from_service_account_file(
-            SERVICE_ACCOUNT_FILE, scopes=SCOPES
-        )
-        calendar_service = build("calendar", "v3", credentials=creds)
-        return calendar_service
+        # Try Streamlit secrets first (for deployment)
+        try:
+            import streamlit as st
+            if 'google' in st.secrets:
+                creds = service_account.Credentials.from_service_account_info(
+                    st.secrets["google"],
+                    scopes=SCOPES
+                )
+                calendar_service = build("calendar", "v3", credentials=creds)
+                return calendar_service
+        except:
+            pass
+
+        # Fallback to local file (for development)
+        SERVICE_ACCOUNT_FILE = os.getenv("GOOGLE_SERVICE_ACCOUNT_FILE", "social-media-agent.json")
+        if os.path.exists(SERVICE_ACCOUNT_FILE):
+            creds = service_account.Credentials.from_service_account_file(
+                SERVICE_ACCOUNT_FILE,
+                scopes=SCOPES
+            )
+            calendar_service = build("calendar", "v3", credentials=creds)
+            return calendar_service
+
+        print("⚠️  No Google Calendar credentials found")
+        return None
+
     except Exception as e:
         print(f"⚠️  Google Calendar authentication failed: {e}")
         return None
-
 
 calendar_service = authenticate_google_calendar()
 
