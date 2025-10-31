@@ -3,12 +3,6 @@ AI Content Workflow Agent - Streamlit App
 Modern/Minimalist Design with Green/Teal Theme
 """
 
-import streamlit as st
-import asyncio
-import json
-from datetime import datetime
-import os
-from dotenv import load_dotenv
 
 # Import your agents
 from ai_agents import (
@@ -24,9 +18,88 @@ from ai_agents import (
     scheduler_agent,
     format_content_for_scheduling
 )
+
+
+import streamlit as st
+import asyncio
+import json
+from datetime import datetime
+import os
+from dotenv import load_dotenv
+import hashlib
 from agents import Runner
 
 load_dotenv()
+
+# ============================================
+# PASSWORD CONFIGURATION
+# ============================================
+
+# Set your password here (or in Streamlit secrets)
+APP_PASSWORD = os.getenv("APP_PASSWORD", "Tina2025")
+
+
+def check_password():
+    """Returns True if user entered correct password"""
+
+    def password_entered():
+        """Checks whether password entered is correct"""
+        if hashlib.sha256(st.session_state["password"].encode()).hexdigest() == hashlib.sha256(
+                APP_PASSWORD.encode()).hexdigest():
+            st.session_state["password_correct"] = True
+            del st.session_state["password"]  # Don't store password
+        else:
+            st.session_state["password_correct"] = False
+
+    # First run, show input for password
+    if "password_correct" not in st.session_state:
+        st.markdown("""
+        <div style="text-align: center; padding: 3rem;">
+            <h1 style="color: #10b981; font-size: 3rem;">🎯 AI Content Workflow Agent</h1>
+            <p style="color: #64748b; font-size: 1.2rem; margin-top: 1rem;">
+                This app is password protected for hackathon judges.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            st.text_input(
+                "Enter Password",
+                type="password",
+                on_change=password_entered,
+                key="password",
+                placeholder="Enter hackathon password"
+            )
+            st.info("💡 Password provided to hackathon judges only")
+        return False
+
+    # Password incorrect, show input + error
+    elif not st.session_state["password_correct"]:
+        st.markdown("""
+        <div style="text-align: center; padding: 3rem;">
+            <h1 style="color: #10b981; font-size: 3rem;">🎯 AI Content Workflow Agent</h1>
+            <p style="color: #64748b; font-size: 1.2rem; margin-top: 1rem;">
+                This app is password protected for hackathon judges.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            st.text_input(
+                "Enter Password",
+                type="password",
+                on_change=password_entered,
+                key="password",
+                placeholder="Enter hackathon password"
+            )
+            st.error("❌ Incorrect password. Please try again.")
+        return False
+    else:
+        # Password correct
+        return True
+
 
 # ============================================
 # PAGE CONFIG
@@ -213,6 +286,18 @@ st.markdown("""
         padding: 1rem;
         border-radius: 8px;
     }
+
+    /* Text input */
+    .stTextInput input {
+        border-radius: 8px;
+        border: 2px solid var(--border);
+        padding: 0.75rem;
+    }
+
+    .stTextInput input:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -384,6 +469,10 @@ async def regenerate_social_media(master_content: str, topic: str):
 # ============================================
 
 def main():
+    # Check password first
+    if not check_password():
+        return
+
     # Header
     st.markdown("""
     <div class="app-header">
@@ -400,7 +489,7 @@ def main():
 
     # Sidebar
     with st.sidebar:
-        st.markdown("### ⚙️ Settings")
+        st.markdown("### ⚙️ App Info")
 
         # API Status
         st.markdown("**API Status:**")
@@ -437,13 +526,17 @@ def main():
         - Review and edit before publishing
         """)
 
+        st.markdown("---")
+        st.markdown("### 🔒 Security")
+        st.info("This app is password-protected and will be taken down after the hackathon.")
+
     # Main content area
     col1, col2 = st.columns([2, 1])
 
     with col1:
         st.markdown("### 📝 Enter Your Content Topic")
         topic = st.text_input(
-            "",
+            "Enter your topic",
             placeholder="E.g., How to use AI to automate your content workflow",
             label_visibility="collapsed"
         )
@@ -561,7 +654,7 @@ def main():
                 )
 
             st.text_area(
-                "",
+                "Master content",
                 value=result['master_content'],
                 height=400,
                 label_visibility="collapsed"
