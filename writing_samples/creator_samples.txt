@@ -1,0 +1,354 @@
+=== SAMPLE 1: LinkedIn post
+              I learnt a simple learning hack from someone recently — and it has been a cheat code for me.
+
+She said anytime she’s about to start a new project, she searches for Medium articles related to it and reads through a few before doing anything else.
+
+On Medium, you see people documenting their process, explaining what they built, what tools they used, and how they solved real problems.
+I tried it once, then again, and quickly realized how much it was helping me get clarity before diving into anything.
+
+I didn’t realize how much I was sleeping on it. I used to go straight into coding or YouTube — now I start with Medium, because reading through similar projects makes everything just clicks better.
+
+So tell me, what’s your go-to resource when you're starting a new project?
+
+Tell me so I can steal your hack😁😅
+
+=== SAMPLE 2: LinkedIn post
+              Recently, I worked on a YouTube script focused on AI evaluation — especially for RAG (Retrieval-Augmented Generation) applications and let’s just say…
+
+it opened my eyes to how much happens even after an AI system is built.
+
+I used to think that once an application is up and running, the hard part was over.
+ But that’s not the case 😩.
+The real challenge is making sure the outputs are reliable, helpful, and consistent.
+
+It’s wild how a system that isn’t properly evaluated can cause real damage to a business — or even be a threat to human life. I came across a story of a man who took his life after chatting with an AI 😳. That was a lot to process.
+
+While working on the script, I had to really dig into documentation (like, actually read it 😅) and explore some powerful evaluation tools:
+
+📌 LangSmith – great for tracing and scoring model responses (plus, I love how clean and simple the UI is).
+
+📌 TruLens – breaks things down using the RAG Triad: relevance, groundedness, and answer quality.
+
+📌 RAGAS – this one stood out for how smoothly it works with structured data like DataFrames.
+
+After going through all this, I’ve gained a whole new appreciation for evaluation.
+In fact I believe it’s a core part of building AI applications that should be paid attention to.
+So if you're working with LLMs or building any kind of RAG system, don’t skip this step.
+
+Evaluation helps you catch problems that may only show up after deployment — and trust me, it’s better you catch them before your users do.
+
+hashtag#AI hashtag#RAG hashtag#DataScience hashtag#LangChain hashtag#AIEvaluation hashtag#LLM hashtag#TechWriting hashtag#ResponsibleAI
+
+=== SAMPLE 3: LinkedIn post
+              I recently completed a 3 week paramilitary camp orientation training and I have lots of to say😩!
+
+This training, called NYSC (National Youth Service Corps), is a compulsory one-year service for Nigerian graduates — and the camp is the preparatory phase.
+
+From day one, I struggled to adjust. Sharing a room with 61 other people and only 4 toilets was already a lot😑. We barely got 3–4 hours of sleep each night (except Sundays), and we stood for hours during morning meditations, drills, and parades.
+
+We were punished for the smallest reasons and honestly there were moments I just wanted to leave. I even cried. But I had made up my mind to complete the process, and that mindset helped me push through✊🏽.
+
+The military personnel didn’t joke with discipline. Rain or sun, if it was time for an activity, it had to be done.
+
+I also learned teamwork — we were grouped into platoons and had to compete in various social and sports activities. To win, we had to show up for one another. As someone who usually shy away from such things, I had to learn to be cooperative and embrace the power of collaboration.
+
+Even when we failed — and we often did — we were encouraged to focus on the bigger picture: how much we had learned from each other, how we’d built a team spirit many of us never had before.
+
+Here’s what I learned:
+📌Discipline and consistency — showing up, no matter the discomfort
+
+📌Teamwork and collaboration — relying on others and contributing meaningfully
+
+📌Resilience — pushing through when everything in me wanted to quit
+
+📌Embracing failure — learning from losses without losing myself
+
+📌Adaptability — adjusting quickly to new environments and demands
+
+
+This experience stretched me in so many ways, but I’m walking away with a stronger mindset and a clearer sense of what I’m capable of. Whether in my career, relationships, or personal goals, these lessons will shape how I show up and grow.😊
+
+
+So in conclusion, did I enjoy the experience? Yes!
+
+If I had to opportunity to redo the training, will I do it again? A RESOUNDING NO!😂
+
+Thanks for reading ❤️
+Activate to view larger image,
+
+=== SAMPLE 4: blog post on "what is data science"
+              A simple explanation for beginners.
+
+Press enter or click to view image in full size
+
+Have you ever engaged with a video on Tiktok only to find similar videos popping on your ‘For You’ page afterward?. If so, you have witnessed the power of Data Science firsthand. Tiktok’s algorithm uses your engagement data — like, comments or views — to recommend videos you will most likely be interested in (Tiktok help center, 2024). This is a prime example of how data science drives user’s engagement, a key goal for social media platforms.
+
+What is Data Science? Data Science is a fusion of two concepts: data and science.
+
+Data refers to unprocessed information collected in various forms — numbers, texts, images or observations — which can be analysed to draw conclusions or make decisions.
+Science is a systematic approach to understanding a phenomenon through observation, experimentation and analysis.
+In essence, data Science is a systematic approach of the study of data to gain meaningful insight which will help one to make informed decisions.
+
+Data Science answers the ‘what’ and ‘why’ questions . For example:
+
+What videos did Sarah engage with on the Tiktok platform?
+Why did she engage with those videos? Understanding this patterm helps us to predict her preference.
+What similar kind of videos is she going to engage with based on her current choice?
+What actionable steps can we take based on this insight?
+Uses of Data Science
+
+To discover hidden patterns and insights.
+To make informed decision.
+To solve crucial business problems and create innovative solutions.
+Application of Data Science
+
+Social media:
+Tiktok’s algorithm suggests similar videos to you based on your previous or current choice of video engagements. Your data in the form of likes, comments or video views is used by Tiktok’s algorithm to recommend similar kind of videos to you.
+
+2. Health care:
+
+AI models analyse patient’s data to predict diseases like diabetes and cancer early.
+
+3. E-commerce:
+
+Amazon and Netflix use algorithms to recommend products or movies to you based on your preference.
+
+4. Transportation:
+
+Bolt and Uber use data science to find fastest route and adjust pricing dynamically based on demand.
+
+5. Retail:
+
+Big supermarkets use data science to forecast demands of products based on past records
+
+6. Environment:
+
+Weather forecasting organisations use data model to predict weather patterns and natural disaster.
+
+The Necessary skills and tools for Data Science
+
+Data Collection and Storage
+SQL: For managing and querying(retrieving) data in databases.
+NoSQL Databases: For working with unstructured data.
+APIs: To collect data from websites.
+2. Data Cleaning and Preprocessing
+
+Python programming and its various libraries such as Pandas as Numpy.
+3. Data Analysis
+
+Python programming and its libraries such as Scipy.
+R (Another programming language popular for statistical analysis
+Excel (A simple tool used to analyse small or medium-size datasets)
+4. Machine Learning
+
+Python Programming: You will need to build models to make predictions using libraries like Scikit-learn and TensorFlow.
+5. Data Visualisation
+
+Python libraries such as Matplotlib and seaborn for creating graphs and charts
+Tableau: A tool for creating interactive visualization and reports.
+Power Bi: A tool for creating dashboards and visual reports.
+6. Big Data Tools
+
+Apache Spark: A tool for processing large amounts of data quickly.
+Hadoop: For handling large-scale data storage and processing
+7. Cloud Platforms
+
+AWS, Google Cloud, Microsoft Azure: these cloud services provides storage, computing power and tools for big data and machine learning.
+8. Collaboration and Version Control
+
+Git: A tool to track changes to your code and collaborate with others.
+GitHub/GitLab: Websites to share and manage your code
+Jupyter Notebooks: A tool to write and share code, visualisation and notes.
+The Best Resource you can use to start learning
+
+I recommend using the DataCamp platform to start your learning journey, it is one of the absolute best for beginners or for anyone who just wants to sharpen their skills. The platform is a paid one but you can get a Free scholarship into the platform, I made a video where i explained how you can do exactly that. Check it out [here].
+
+=== SAMPLE 4: blog post on “Should I pivot from data science to AI?”
+
+       This is a question I’ve been getting a lot lately.
+
+It’s easy to see why.
+
+You’ve probably seen the headlines. AI is everywhere. Companies are pouring billions into it — Goldman Sachs thinks we’ll hit $200 billion in global investment by 2025. New fancy AI jobs are popping up on different platforms.
+
+And yeah, it’s tempting to think, “Maybe I should jump on this AI train before it leaves the station.”
+
+I get it — more demand could mean better jobs, higher pay, exciting work.
+
+But hang on a second. Before you make that move, there’s something you should know.
+
+Even though data science and AI jobs both deal with data and models, they’re actually pretty different in terms of the required skills and knowledge. It’s kinda like comparing someone who designs cars from scratch versus a mechanic who fixes and customizes them. Sure, they both work with cars, but their expertise and approach are entirely different.
+
+Is Pivoting to AI the Right Move? 🤔
+
+In this post, we’ll dive into real job posting data to see if the AI hype matches reality. We will break down:
+
+Has the demand for AI jobs actually increased in recent years?
+What kinds of AI jobs are trending?
+What are the most in-demand skills for these jobs
+How your data background fits into the picture
+👉 Note: You can also watch the video version of this blog post :
+
+
+Are AI-related job postings increasing?
+I wanted to go beyond the headlines and look at actual numbers. I got my hands on this dataset from Luke Barrouse that has over 3 million data science job postings from December 2022 until now.
+
+I filtered for anything with “AI” or “Artificial Intelligence” in the title to see what’s really going on.
+
+What’s really interesting is when we look at AI jobs as a percentage of all postings over time. There’s an upward trend in the past years. AI roles are growing, even though they’re still a small slice of the overall pie — just a few percent in general.
+
+Press enter or click to view image in full size
+
+Image source: Author
+Now look at the next graph: January 2025 had about 5,000 AI job postings compared to less than 2,000 in January 2024. That’s a pretty significant jump in just one year.
+
+Press enter or click to view image in full size
+
+Image source: Author
+Overall the results are clear, AI job are in demand.
+
+So… Why is This Happening?
+First, the rise of powerful generative AI tools like ChatGPT, DeepSeek, Claude and AI-powered analytics have changed the game. Companies can now see firsthand what AI can actually do. It’s not theoretical anymore. Chip Huyen put it nicely in her book: “Applications previously thought impossible are now possible, and applications not thought of before are emerging. Even applications not thought possible today might be possible tomorrow.”
+
+Another important factor is that there’s an increasingly lower cost and entrance barrier to building AI applications and integrating AI. Using model APIs, you can get access to powerful AI models via single API calls. Some models are even totally free as open-source. This makes it cheaper to build AI solutions and so returns on investment for AI become more attractive.
+
+This is why companies are trying to integrate AI at almost every level, from process automation, assisted writing to data analysis, programming and marketing. This prompted a sharp increase in investments in AI. AI is no longer just an option; it’s a competitive advantage necessary for business growth.
+
+The figure below shows the number of S&P 500 companies that mentioned AI in their earning calls in the past 10 years. This clearly shows how AI is becoming an important topic for businesses across industries. And with that realization comes the need for more AI talent to build, maintain, and optimize these systems.
+
+Press enter or click to view image in full size
+
+Image source: https://insight.factset.com/highest-number-of-sp-500-companies-citing-ai-on-earnings-calls-over-past-10-years
+What Are These AI Jobs, Exactly?
+Based on the analysis of job postings from 2022 to 2025, we can see a clear trend in the most in-demand roles.
+
+Press enter or click to view image in full size
+
+Image source: Author
+At the top of the list, we have Senior AI/ML Engineer. This isn’t surprising because as AI models get more complex, companies need highly skilled engineers to build, fine-tune, and scale these systems efficiently. In fact, LinkedIn’s report ranks AI Engineers among the top 25 emerging roles in the US.
+
+What exactly does an AI engineer do?
+
+You can think of it this way: if we put data science research on one end of the spectrum and AI applications on the other, AI Engineers lean towards the product and user end. They don’t BUILD the AI models, but rather build applications that make use of pre-trained AI models to solve a specialized business problem.
+
+Press enter or click to view image in full size
+
+Image source: https://www.latent.space/p/ai-engineer
+So you can perhaps think of AI Engineers as Software Engineers specialized in AI products.
+
+Other in-demand roles we can see in the data are Data Scientist with a focus on Generative AI, and Data Engineer.
+
+What are the required skills?
+Now, the big question — what skills do you actually need to land these roles, specifically an AI Engineer role?
+
+In the book AI Engineering, Chip Huyen outlines 3 key layers of the AI engineering stack:
+
+Application Development where you craft effective prompts, incorporating relevant context (like a knowledge base), potentially also building an agent workflow, and designing a solid user interface.
+Model Development where you fine-tune models, optimizing inference, and handling data collection and engineering.
+Infrastructure layer where you manage cloud resources and compute power, monitor and maintain AI applications at scale.
+Press enter or click to view image in full size
+
+Image source: AI Engineering
+According to the data, Python ranks at the top due to its versatility and widespread use in machine learning and AI.
+
+Following closely behind are cloud platforms like Azure and AWS, which provide cloud computing and host AI solutions. Deep learning frameworks like TensorFlow and PyTorch are also highly valued in this role.
+
+Press enter or click to view image in full size
+
+Image source: Author
+The data highlights familiarity with natural language processing and Large language models, which are foundational to generative AI.
+
+Upwork also highlighted these same skills in their report on the top 19 AI skills in demand — Python proficiency, machine learning frameworks like TensorFlow and PyTorch, and expertise in natural language processing (NLP).
+
+But as the AI field expands and matures, I’m seeing a shift. While technical skills remain important, there will a growing demand for roles that focus on evaluation, implementation, and business integration — areas where many data professionals already have transferable skills.
+
+What are the main opportunities for Data Scientists/Data Analysts?
+As we’ve seen, roles like AI Engineer get a lot of attention, but they’re also highly competitive. These positions often require deep expertise in specialized areas like neural networks, model optimization, and deployment pipelines.
+
+But if you’re a data scientist or analyst looking to take a leap into AI, the good news is — Many AI-related jobs rely on the strong data skills you already have. This can serve as great next step for your career.
+
+A really practical way I’ve seen is through Evaluation work. If your company is building or experimenting with AI solutions, a smart move is probably to get involved in your company’s LLM evals efforts.
+
+For example, your company might develop an AI automation tool, they need to make sure that this tool works. To do that, you’ll need to evaluate its output through a bunch of tests and frameworks.
+
+There are many factors to consider:
+
+Which model is best for your company’s applications?
+Will a change in system prompt hurt the LLM’s performance?
+If yes, then by how much? Etc.
+As a data analyst or data scientist, you’re familiar with metrics, data analysis and testing. And so these are the kinds of questions that a data scientist is uniquely suited to answer. This is a great time to start studying, reading, and learning about evaluating AI applications. I talked about some books that might be helpful in my previous posts.
+
+Or if your company doesn’t have an evals effort, you can help get them started. It should be a relatively “easy” transition. And you might learn a ton about AI for the business, what it can do and what it cannot do.
+
+I’ve also heard people talk about other roles like AI Quality Assurance and Business Analysts — these are professionals who deeply understand models, metrics, and business goals. They might do a variety of tasks, from investigating LLM outputs to building business dashboards to designing A/B tests for AI products.
+
+This is yet to be seen in data. But I feel like anyone with an analytical mind and data science skills can adapt themselves to this new role.
+
+Conclusions
+So, should a data scientist pivot into AI?
+
+Well, based on everything we’ve explored — the job market trends, the increasing demand, and the overlap in skills — it’s clear that AI jobs are gaining importance.
+
+But does that mean everyone needs to make the switch?
+
+Not necessarily.
+
+AI is evolving fast, but data science itself isn’t going anywhere. In fact, AI depends heavily on solid data foundations, which means data engineers, data analysts, and traditional data scientists will still play a crucial role.
+
+However, if you’re looking for new opportunities, potentially higher salaries, or more cutting-edge work, then moving into AI could be a great career decision. The key is upskilling yourself. As a data scientist, you already have a solid foundation. You work with data, understand statistics, and may already be familiar with machine learning concepts. You can take on an AI-related role right where you are at your job.
+
+Or you can learn more advanced skills to bridge the knowledge gap and try for more advanced roles like AI engineer.
+
+At the end of the day, the decision comes down to your goals. If you love solving business problems with data and statistics, you might not need to pivot entirely. But if you’re excited about working on AI-driven solutions, now is the perfect time to start digging in and building the right skills.
+
+If you want to master Python, learn the foundation of ML/ AI and build projects, you can check out my course below 👇.
+
+Master Python for AI Projects
+Get early-bird access
+python-course-earlybird.framer.website
+
+And as always, I’d love to hear your thoughts in the comments! Thanks for reading, and I’ll see you soon!
+
+Data Science
+AI
+Careers
+
+=== SAMPLE 5: Tiktok script on "what is machine learning"
+               Hook: Did you know that our brain has a 66 billion tiny cells called neurons? Now these neurons are responsible for our thinking, learning or recognizing and even controlling our movements.
+
+
+               Body:Now scientists try to mimic this design by creating a machine learning model called neural networks. Just like our brain, these neural networks receive inputs, they process these inputs and then make decisions.
+               A typical reward application of neural network is your facial recognition on your phone. So you know when you try to activate the facial recognition feature and then use your camera to scan your face?
+               What happens is that these artificial neurons scan through the pixels of your picture or your face and then identify the patterns, the shape, the color. So that next time it is able to identify you based on what it has learned about you.
+                Now this is very similar to how our brain works, identifying things based on past experiences. If you learned something new, don't forget to follow me for more. Bye!
+
+=== SAMPLE 6: Tiktok script on "what is API"
+              Hook: I'm going to be explaining the word API, which stands for Application Programming Interface in layman's term.
+
+
+              Body: Now let's assume you have a friend named John and you want to visit John, but John stays in a gated estate.
+              So what happens is that you go there and you knock on the gate. Who's going to come out? The gateman.
+              He comes out, he asks you, what are you looking for? You say, oh, I'm looking for John.
+              So the gateman goes in, meets John and asks John if he was expecting you. John says, oh yeah, let her in or let him in.
+              So the gateman comes and lets you in. Now that's simple, right? That is what an API looks like.
+              An API is like that gateman that serves as a middleman between you, the user, and the system.
+              The system in your illustration is John. Let's put this in a formal way. An API allows different software systems to communicate with each other.
+               To understand this even much more better, let me put it in a real life scenario for you. So let's assume you want to analyze your favorite YouTube creator's data.
+               Maybe for some project reasons or so, you want to find out their best performing videos, their worst performing videos, and stuff like that.
+                Now you're going to need YouTube data or their YouTube data to do that. And to get it, you would need a YouTube API, which you're going to use to send a request to the YouTube server.
+                The API is going to confirm if your request is valid. And if it confirms that it is valid, it is going to fetch back the data for you, the one you're requesting for, so your Python scripts.
+                Now that is just a practical way the YouTube API works. Just like the gateman in the estates that confirms with John if he's expecting you and then lets you in. That is how it works. So if you're interested in seeing this project come to life, I've created it on my page.
+                 You can go and check it out and follow it because one way to learn or to really understand some concepts is by building projects around that particular concept. Anyways, if you enjoyed this video, don't forget to like, share, and follow me for more. Bye.
+
+=== SAMPLE 7: Tiktok script on "getting a job as a beginner in tech"
+              Hook:Stop downplaying yourself.
+              As a data analyst or a data scientist, it is very, very easy for you to think that, oh, you need to know so much before you start applying for jobs.
+               But that's a lie because most of the things you're going to do on the job, you're going to learn on the job.
+               And I'm talking from experience. I'm going to show you or tell you three tips that's going to help you land your first job without real work experience because this is exactly what I did to get my first job.
+               The first tip I'll give you is build personal projects. Build your portfolio brick by brick. What I mean is build unique projects that will help you to stand out, that solve real-world problems.
+               Let's assume you're a data analyst. Some of the projects you can build to showcase your work are projects that shows that you know how to do web scraping, you know how to use API to fetch data.
+                Those are unique project ideas that will help you stand out because not every data analyst know how to use Python to fetch data. The second thing you want to do is to share your work. Don't just hide it in your laptop.
+                Post about it on LinkedIn, on TikTok. And if you can't post or maybe you don't like videos, making videos, then write about your project on Medium and Hashnode. See, this is going to help you build authority in that field.
+                When I was applying for my job, I added my LinkedIn and my TikTok page to my application. And guess what? My employer acknowledged it in the interview. I mean, it was one of the things that helped me to stand out. It's just like a second factor authentication, if you ask me.
+                The third thing you want to do is to send out a tailored application for each job role. And make sure that your portfolio showcases skills and projects that fit each job role. See, if you can do these three things that I've mentioned very well, you will get a job. And I'm telling you from experience, it's not that deep.
+                I promise you. Anyways, if you enjoyed this video, don't forget to follow me because I'll make your data journey easy, sweet, and enjoyable. Okay, bye.

@@ -1,0 +1,9 @@
+.env
+social-media-agent.json
+venv/
+__pycache__/
+.streamlit/
+*.pyc
+.DS_Store
+.idea/
+
