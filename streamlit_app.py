@@ -493,11 +493,21 @@ def main():
 
         # API Status
         st.markdown("**API Status:**")
+
+        # Check Google secrets properly for deployed app
+        google_available = False
+        try:
+            if 'google' in st.secrets:
+                google_available = True
+        except:
+            # Fallback to local file check
+            google_available = os.path.exists("social-media-agent.json")
+
         apis = {
-            "OpenAI": os.getenv("OPENAI_API_KEY"),
-            "Tavily": os.getenv("TAVILY_API_KEY"),
-            "Notion": os.getenv("NOTION_API_KEY"),
-            "Google Calendar": os.path.exists("social-media-agent.json")
+            "OpenAI": st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY")),
+            "Tavily": st.secrets.get("TAVILY_API_KEY", os.getenv("TAVILY_API_KEY")),
+            "Notion": st.secrets.get("NOTION_API_KEY", os.getenv("NOTION_API_KEY")),
+            "Google Calendar": google_available  # ← NOW CHECKS SECRETS!
         }
 
         for api, status in apis.items():
