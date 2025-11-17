@@ -3,7 +3,7 @@
 Transform one topic into complete, multi-platform content in 5 minutes.
 
 **Live Demo:** [https://content-workflow-agent.streamlit.app](https://content-workflow-agent.streamlit.app/)  
-**Password:** `undisclosed` *(for hackathon judges)*
+**Password:** `undisclosed` **
 
 ---
 
@@ -343,14 +343,14 @@ This project is open source and available under the MIT License.
 
 I built this for [1M Celebration Hackathon] 2025 to solve my own problem: spending too much time creating content for multiple platforms.
 
-- 💼 LinkedIn: [www.linkedin.com/in/ikein-sarah-51b664224
+- LinkedIn: [www.linkedin.com/in/ikein-sarah-51b664224
 ]
-- 📧 Email: elosarah85@gmail.com
-- 🐙 GitHub: [https://github.com/Ikein-Sarah/]
+- Email: elosarah85@gmail.com
+- GitHub: [https://github.com/Ikein-Sarah/]
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 Special thanks to:
 - **OpenAI** for GPT-4 and the Agents SDK
@@ -361,7 +361,7 @@ Special thanks to:
 
 ---
 
-## ⭐ Support
+## Support
 
 If you found this helpful:
 - ⭐ Star this repo
@@ -381,4 +381,3 @@ Have questions or found a bug?
 
 ---
 
-**Built with ❤️ for [1M Celebration Hackathon] 2025**
