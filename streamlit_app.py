@@ -3,7 +3,6 @@ AI Content Workflow Agent - Streamlit App
 Modern/Minimalist Design with Green/Teal Theme
 """
 
-
 # Import your agents
 from ai_agents import (
     research_agent,
@@ -18,7 +17,6 @@ from ai_agents import (
     scheduler_agent,
     format_content_for_scheduling
 )
-
 
 import streamlit as st
 import asyncio
@@ -35,8 +33,25 @@ load_dotenv()
 # PASSWORD CONFIGURATION
 # ============================================
 
-# Set your password here (or in Streamlit secrets)
-APP_PASSWORD = os.getenv("APP_PASSWORD", "Tina2025")
+# Get password from environment variable or Streamlit secrets
+# NO DEFAULT PASSWORD - must be set in environment
+APP_PASSWORD = None
+
+# Try Streamlit secrets first (for deployed app)
+try:
+    if hasattr(st, 'secrets') and 'APP_PASSWORD' in st.secrets:
+        APP_PASSWORD = st.secrets["APP_PASSWORD"]
+except Exception:
+    pass
+
+# Fall back to environment variable (for local development)
+if not APP_PASSWORD:
+    APP_PASSWORD = os.getenv("APP_PASSWORD")
+
+# If no password is configured, show error
+if not APP_PASSWORD:
+    st.error("⚠️ APP_PASSWORD not configured. Please set it in your .env file or Streamlit secrets.")
+    st.stop()
 
 
 def check_password():
@@ -306,6 +321,16 @@ st.markdown("""
 # HELPER FUNCTIONS
 # ============================================
 
+def get_secret_or_env(key):
+    """Safely get a secret from Streamlit secrets or environment variable"""
+    try:
+        if hasattr(st, 'secrets') and key in st.secrets:
+            return st.secrets[key]
+    except Exception:
+        pass
+    return os.getenv(key)
+
+
 async def run_with_retry(agent, input_text, timeout=180):
     """Run agent with retry logic"""
     for attempt in range(3):
@@ -497,17 +522,20 @@ def main():
         # Check Google secrets properly for deployed app
         google_available = False
         try:
-            if 'google' in st.secrets:
+            if hasattr(st, 'secrets') and 'google' in st.secrets:
                 google_available = True
-        except:
-            # Fallback to local file check
+        except Exception:
+            pass
+
+        # Fallback to local file check
+        if not google_available:
             google_available = os.path.exists("social-media-agent.json")
 
         apis = {
-            "OpenAI": st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY")),
-            "Tavily": st.secrets.get("TAVILY_API_KEY", os.getenv("TAVILY_API_KEY")),
-            "Notion": st.secrets.get("NOTION_API_KEY", os.getenv("NOTION_API_KEY")),
-            "Google Calendar": google_available  # ← NOW CHECKS SECRETS!
+            "OpenAI": get_secret_or_env("OPENAI_API_KEY"),
+            "Tavily": get_secret_or_env("TAVILY_API_KEY"),
+            "Notion": get_secret_or_env("NOTION_API_KEY"),
+            "Google Calendar": google_available
         }
 
         for api, status in apis.items():
