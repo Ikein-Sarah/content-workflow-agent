@@ -1,4 +1,4 @@
-# 🎯 AI Content Workflow Agent
+#  AI Content Workflow Agent
 
 Transform one topic into complete, multi-platform content in 5 minutes.
 
@@ -29,7 +29,7 @@ This app takes **one topic** and automatically:
 
 ---
 
-## ⚡ Quick Start
+##  Quick Start
 
 ### Option 1: Use the Live App (Easiest)
 
@@ -364,10 +364,10 @@ Special thanks to:
 ## Support
 
 If you found this helpful:
-- ⭐ Star this repo
-- 🍴 Fork it for your own use
-- 📢 Share it with others
-- 💬 Leave feedback in Issues
+-  Star this repo
+-  Fork it for your own use
+-  Share it with others
+-  Leave feedback in Issues
 
 ---
 
