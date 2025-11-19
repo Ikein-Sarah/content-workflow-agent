@@ -93,7 +93,7 @@ def check_password():
     elif not st.session_state["password_correct"]:
         st.markdown("""
         <div style="text-align: center; padding: 3rem;">
-            <h1 style="color: #10b981; font-size: 3rem;">🎯 AI Content Workflow Agent</h1>
+            <h1 style="color: #10b981; font-size: 3rem;"> AI Content Workflow Agent</h1>
             <p style="color: #64748b; font-size: 1.2rem; margin-top: 1rem;">
                 This app is password protected for hackathon judges.
             </p>
@@ -501,7 +501,7 @@ def main():
     # Header
     st.markdown("""
     <div class="app-header">
-        <h1 class="app-title">🎯 AI Content Workflow Agent</h1>
+        <h1 class="app-title"> AI Content Workflow Agent</h1>
         <p class="app-subtitle">From Idea to Published Content in 5 Minutes</p>
     </div>
     """, unsafe_allow_html=True)
@@ -706,7 +706,7 @@ def main():
                 social = result['social_media']
 
                 # Regenerate button
-                if st.button("🔄 Regenerate Social Media Content", use_container_width=True):
+                if st.button(" Regenerate Social Media Content", use_container_width=True):
                     with st.spinner("Regenerating..."):
                         new_social = asyncio.run(regenerate_social_media(
                             result['master_content'],
@@ -735,7 +735,7 @@ def main():
                     )
 
                 # LinkedIn
-                with st.expander("💼 LinkedIn Post", expanded=True):
+                with st.expander(" LinkedIn Post", expanded=True):
                     st.markdown(f"**Hook:** {social.linkedin_hook}")
                     st.write(social.linkedin_body)
                     st.markdown(f"**CTA:** {social.linkedin_cta}")
@@ -748,7 +748,7 @@ def main():
                     )
 
                 # Instagram
-                with st.expander("📸 Instagram Caption", expanded=True):
+                with st.expander(" Instagram Caption", expanded=True):
                     st.markdown(f"**Hook:** {social.instagram_hook}")
                     st.write(social.instagram_body)
                     st.markdown(f"**CTA:** {social.instagram_cta}")
